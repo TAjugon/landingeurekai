@@ -444,7 +444,7 @@ export default function Home() {
                 <div className="flex h-16 w-16 items-center justify-center rounded-full border-[5px] border-white/95">
                   <Check className="h-10 w-10 text-white" strokeWidth={4} />
                 </div>
-                <h3 className="mt-4 text-[1.95rem] font-extrabold leading-tight text-white md:text-[2.55rem]">Este bootcamp es para ti SI:</h3>
+                <h3 className="mt-4 text-[1.95rem] font-extrabold leading-tight text-white md:text-[2.55rem]">SI es para ti:</h3>
               </div>
               <ul className="flex flex-col gap-4 text-base font-semibold text-white/95 md:text-lg">
                 <li className="flex items-start gap-3">
@@ -472,7 +472,7 @@ export default function Home() {
                 <div className="flex h-16 w-16 items-center justify-center rounded-full border-[5px] border-white/95">
                   <X className="h-10 w-10 text-white" strokeWidth={4} />
                 </div>
-                <h3 className="mt-4 text-[1.95rem] font-extrabold leading-tight text-white md:text-[2.55rem]">NO es para ti si:</h3>
+                <h3 className="mt-4 text-[1.95rem] font-extrabold leading-tight text-white md:text-[2.55rem]">NO es para ti:</h3>
               </div>
               <ul className="flex flex-col gap-4 text-base font-semibold text-white/90 md:text-lg">
                 <li className="flex items-start gap-3">
@@ -552,36 +552,30 @@ export default function Home() {
       <section className="bg-white py-16 lg:py-24">
         <div className="mx-auto max-w-6xl px-6">
           {/* Banner Modalidad */}
-          <div className="mx-auto max-w-5xl rounded-[2rem] bg-[#fd7914] px-5 py-6 md:px-8 md:py-8">
-            <div className="grid items-center gap-5 md:grid-cols-[1.08fr_1fr_1fr] md:gap-6">
-              <div className="text-left md:max-w-[320px]">
-                <p className="text-3xl font-extrabold uppercase tracking-tight leading-[0.95] text-white md:text-[2.7rem] md:leading-[1]">
+          <div className="mx-auto max-w-4xl rounded-[2rem] bg-[#fd7914] px-4 py-5 md:px-8 md:py-8">
+            <div className="grid items-center gap-4 md:grid-cols-[1.08fr_1fr_1fr] md:gap-6">
+              <div className="text-left md:max-w-[300px]">
+                <p className="text-2xl font-extrabold uppercase tracking-tight leading-[0.95] text-white md:text-[2.5rem] md:leading-[1]">
                   MODALIDAD
                   <br />
                   PRESENCIAL:
                 </p>
               </div>
 
-              <div className="flex min-h-[226px] flex-col items-center text-center md:min-h-[236px]">
-                <div className="icon1 mt-1 flex h-[64px] w-[64px] items-center justify-center">
-                  <Image src="/icono70.svg" alt="Icono 70" width={56} height={56} className="object-contain" />
+              <div className="flex min-h-[206px] flex-col items-center justify-between text-center md:min-h-[226px]">
+                <div className="icon1 mt-1 flex h-[58px] w-[58px] items-center justify-center">
+                  <Image src="/icono70.svg" alt="Icono 70" width={52} height={52} className="object-contain" />
                 </div>
-                <span className="mt-3 block text-[4rem] font-black leading-none text-white md:text-[5rem]">70%</span>
-                <span className="mt-2 flex h-[4.4rem] items-start text-[1.85rem] leading-[1.04] font-semibold text-white md:text-[2.1rem]">
-                  Práctica
-                </span>
+                <span className="block text-[3.5rem] font-black leading-none text-white md:text-[4.4rem]">70%</span>
+                <span className="text-[1.6rem] font-semibold text-white md:text-[2rem]">Práctico</span>
               </div>
 
-              <div className="flex min-h-[226px] flex-col items-center border-l border-white/70 text-center md:min-h-[236px] md:pl-5 lg:pl-6">
-                <div className="icon2 mt-1 flex h-[72px] w-[72px] items-center justify-center md:h-[4.5rem] md:w-[4.5rem]">
-                  <Image src="/icono30.svg" alt="Icono 30" width={64} height={64} className="object-contain" />
+              <div className="flex min-h-[206px] flex-col items-center justify-between border-l border-white/70 text-center md:min-h-[226px] md:pl-4 lg:pl-5">
+                <div className="icon2 mt-1 flex h-[64px] w-[64px] items-center justify-center md:h-[4.3rem] md:w-[4.3rem]">
+                  <Image src="/icono30.svg" alt="Icono 30" width={56} height={56} className="object-contain" />
                 </div>
-                <span className="mt-3 block text-[4rem] font-black leading-none text-white md:text-[5rem]">30%</span>
-                <span className="mt-2 flex h-[4.4rem] items-start text-[1.85rem] leading-[1.04] font-semibold text-white md:text-[2.1rem]">
-                  Contenido
-                  <br />
-                  guiado
-                </span>
+                <span className="block text-[3.5rem] font-black leading-none text-white md:text-[4.4rem]">30%</span>
+                <span className="text-[1.6rem] font-semibold text-white md:text-[2rem]">Teórico</span>
               </div>
             </div>
           </div>
@@ -894,20 +888,18 @@ export default function Home() {
       <section id="contacto" className="bg-[#5a5a5d] py-16 lg:py-20">
         <div className="mx-auto max-w-4xl px-6 text-center text-white">
           <h2 className="text-5xl font-bold md:text-6xl">¿Tienes dudas?</h2>
-          <p className="mx-auto mt-6 max-w-[34rem] text-xl leading-relaxed text-white/90 md:text-2xl">
-            Escríbenos por WhatsApp y te ayudamos a resolverlas ahora mismo.
-            <br />
-            Queremos que tomes una decisión con claridad y sin presiones.
+          <p className="mx-auto mt-6 max-w-[34rem] text-base leading-relaxed text-white/90 md:text-lg">
+            Escríbenos por WhatsApp y te ayudamos a resolver tus dudas. Queremos que tomes una decisión con claridad y sin presiones.
           </p>
 
           <a
             href={actionLinks.whatsapp}
             target="_blank"
             rel="noreferrer"
-            className="mx-auto mt-10 inline-flex items-center gap-3 rounded-full bg-[#fd7914] px-12 py-5 text-2xl font-bold text-white transition hover:bg-[#fd7914] sm:px-16"
+            className="mx-auto mt-10 inline-flex items-center gap-2 rounded-full bg-[#fd7914] px-8 py-3 text-xl font-bold text-white transition hover:bg-[#fd7914] sm:px-10"
           >
             Contáctanos
-            <Image src="/whatsapp.svg" alt="WhatsApp" width={28} height={28} className="h-7 w-7" />
+            <Image src="/whatsapp.svg" alt="WhatsApp" width={24} height={24} className="h-6 w-6" />
           </a>
         </div>
       </section>
