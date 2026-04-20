@@ -276,6 +276,20 @@ export default function Home() {
           </div>
 
           <div className="mx-auto mt-10 grid max-w-[1060px] items-start gap-8 lg:grid-cols-[1fr_auto_1fr] lg:gap-10">
+            <div className="text-left text-slate-800 lg:ml-auto lg:max-w-[470px] lg:pr-6">
+              <h3 className="text-[2rem] font-extrabold uppercase tracking-tight">Incluye:</h3>
+              <ul className="mt-1.5 list-disc space-y-1.5 pl-7 text-[1.12rem] leading-[1.55] sm:text-[1.22rem]">
+                <li>Acceso al Bootcamp Presencial</li>
+                <li>Materiales</li>
+                <li>Toolkit Digital</li>
+                <li>Certificado</li>
+                <li>Brunch, Almuerzo y Breaks</li>
+                <li>Soporte Post Curso.</li>
+              </ul>
+            </div>
+
+            <div className="hidden h-full w-px bg-slate-400/75 lg:block" />
+
             <div className="text-left text-slate-800 mt-8 lg:mt-10 lg:max-w-[560px] lg:pl-12">
               <p className="text-[1.18rem] leading-[1.65] sm:text-[1.3rem] lg:text-[1.32rem]">
                 <span className="font-extrabold">
@@ -293,20 +307,6 @@ export default function Home() {
                 <br />
                 durante +10 años
               </p>
-            </div>
-
-            <div className="hidden h-full w-px bg-slate-400/75 lg:block" />
-
-            <div className="text-left text-slate-800 lg:max-w-[470px] lg:pl-6">
-              <h3 className="text-[2rem] font-extrabold uppercase tracking-tight">Incluye:</h3>
-              <ul className="mt-1.5 list-disc space-y-1.5 pl-7 text-[1.12rem] leading-[1.55] sm:text-[1.22rem]">
-                <li>Acceso al Bootcamp Presencial</li>
-                <li>Materiales</li>
-                <li>Toolkit Digital</li>
-                <li>Certificado</li>
-                <li>Brunch, Almuerzo y Breaks</li>
-                <li>Soporte Post Curso.</li>
-              </ul>
             </div>
           </div>
 
@@ -338,7 +338,7 @@ export default function Home() {
           <div className="flex flex-col gap-10 lg:flex-row lg:items-center lg:justify-between lg:gap-16">
             {/* Texto izquierdo */}
             <div className="max-w-lg">
-              <h2 className="text-3xl font-light italic text-white md:text-4xl">Diseñado exclusivamente</h2>
+              <h2 className="text-3xl font-light text-white md:text-4xl">Diseñado exclusivamente</h2>
               <p className="mt-2 text-4xl font-bold uppercase leading-tight text-white md:text-5xl lg:text-6xl">
                 Para quienes
                 <br />
@@ -520,7 +520,7 @@ export default function Home() {
               {/* Items del timeline */}
               <div className="flex flex-col gap-6">
                 {[
-                  { time: "8:00", activity: "Brunch y Bienvenida" },
+                  { time: "8:00", activity: "Bienvenida" },
                   { time: "8:30", activity: "Instrucciones y agrupación" },
                   { time: "9:00", activity: "Revisión de tendencias (Radar)" },
                   { time: "9:45", activity: <strong>Break</strong> },
@@ -552,32 +552,32 @@ export default function Home() {
       <section className="bg-white py-16 lg:py-24">
         <div className="mx-auto max-w-6xl px-6">
           {/* Banner Modalidad */}
-          <div className="mx-auto max-w-5xl rounded-[2rem] bg-[#fd7914] px-6 py-8 md:px-10 md:py-10">
-            <div className="grid items-center gap-6 md:grid-cols-[1.08fr_1fr_1fr] md:gap-8">
-              <div className="text-left md:max-w-[340px]">
-                <p className="text-3xl font-extrabold uppercase tracking-tight leading-[0.95] text-white md:text-[3rem] md:leading-[1]">
+          <div className="mx-auto max-w-5xl rounded-[2rem] bg-[#fd7914] px-5 py-6 md:px-8 md:py-8">
+            <div className="grid items-center gap-5 md:grid-cols-[1.08fr_1fr_1fr] md:gap-6">
+              <div className="text-left md:max-w-[320px]">
+                <p className="text-3xl font-extrabold uppercase tracking-tight leading-[0.95] text-white md:text-[2.7rem] md:leading-[1]">
                   MODALIDAD
                   <br />
                   PRESENCIAL:
                 </p>
               </div>
 
-              <div className="flex min-h-[236px] flex-col items-center text-center md:min-h-[246px]">
-                <div className="icon1 mt-1 flex h-[70px] w-[70px] items-center justify-center">
-                  <Image src="/icono70.svg" alt="Icono 70" width={64} height={64} className="object-contain" />
+              <div className="flex min-h-[226px] flex-col items-center text-center md:min-h-[236px]">
+                <div className="icon1 mt-1 flex h-[64px] w-[64px] items-center justify-center">
+                  <Image src="/icono70.svg" alt="Icono 70" width={56} height={56} className="object-contain" />
                 </div>
-                <span className="mt-3 block text-[4.5rem] font-black leading-none text-white md:text-[5.5rem]">70%</span>
-                <span className="mt-2 flex h-[4.8rem] items-start text-[2rem] leading-[1.04] font-semibold text-white md:text-[2.25rem]">
+                <span className="mt-3 block text-[4rem] font-black leading-none text-white md:text-[5rem]">70%</span>
+                <span className="mt-2 flex h-[4.4rem] items-start text-[1.85rem] leading-[1.04] font-semibold text-white md:text-[2.1rem]">
                   Práctica
                 </span>
               </div>
 
-              <div className="flex min-h-[236px] flex-col items-center border-l border-white/70 text-center md:min-h-[246px] md:pl-6 lg:pl-8">
-                <div className="icon2 mt-1 flex h-[80px] w-[80px] items-center justify-center md:h-[5rem] md:w-[5rem]">
-                  <Image src="/icono30.svg" alt="Icono 30" width={72} height={72} className="object-contain" />
+              <div className="flex min-h-[226px] flex-col items-center border-l border-white/70 text-center md:min-h-[236px] md:pl-5 lg:pl-6">
+                <div className="icon2 mt-1 flex h-[72px] w-[72px] items-center justify-center md:h-[4.5rem] md:w-[4.5rem]">
+                  <Image src="/icono30.svg" alt="Icono 30" width={64} height={64} className="object-contain" />
                 </div>
-                <span className="mt-3 block text-[4.5rem] font-black leading-none text-white md:text-[5.5rem]">30%</span>
-                <span className="mt-2 flex h-[4.8rem] items-start text-[2rem] leading-[1.04] font-semibold text-white md:text-[2.25rem]">
+                <span className="mt-3 block text-[4rem] font-black leading-none text-white md:text-[5rem]">30%</span>
+                <span className="mt-2 flex h-[4.4rem] items-start text-[1.85rem] leading-[1.04] font-semibold text-white md:text-[2.1rem]">
                   Contenido
                   <br />
                   guiado
@@ -1000,6 +1000,16 @@ export default function Home() {
           </div>
         </div>
       </footer>
+
+      <a
+        href={actionLinks.whatsapp}
+        target="_blank"
+        rel="noreferrer"
+        aria-label="WhatsApp"
+        className="fixed bottom-4 right-4 z-50 inline-flex items-center justify-center rounded-full bg-[#fd7914] p-4 text-white shadow-2xl shadow-slate-950/35 transition hover:bg-[#e26b0e] md:bottom-6 md:right-6"
+      >
+        <Image src="/whatsapp.svg" alt="WhatsApp" width={28} height={28} className="h-7 w-7" />
+      </a>
     </main>
   )
 }

@@ -83,8 +83,10 @@ export default function TestimonialsCarousel({ testimonials }: TestimonialsCarou
 
             <div className="mt-5 border-t border-white/15 pt-5">
               <p className="text-4xl font-bold leading-tight text-white">{testimonial.name}</p>
-              <p className="mt-1.5 text-xl text-white/85">{testimonial.role}</p>
-              {testimonial.company && <p className="text-xl italic text-white/65">{testimonial.company}</p>}
+              <p className="mt-1.5 text-xl text-white/85">
+                {testimonial.role}
+                {testimonial.company ? `, ${testimonial.company}` : ""}
+              </p>
             </div>
           </article>
         ))}
