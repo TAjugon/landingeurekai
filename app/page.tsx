@@ -92,7 +92,7 @@ export default function Home() {
     {
       quote:
         "La innovación dejó de ser concepto y se convirtió en práctica viva. Aprendí a equivocarme y construir desde la acción. Hoy construyo sistemas de innovación que generan resultados reales en mi empresa.",
-      name: "Claudia Lorena Vargas Correa",
+      name: "Claudia Vargas Correa",
       role: "Gerente General - Construvid",
       image: "/claudia.jpeg",
     },
