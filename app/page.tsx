@@ -757,7 +757,7 @@ export default function Home() {
               className="text-white"
             />
           </div>
-          <div id="reserva-middle" className="absolute left-0 right-0 top-[calc(50%+1rem)] h-0" />
+          <div id="reserva-middle" className="absolute left-0 right-0 top-[calc(50%+1rem+5px)] h-0" />
 
           <div className="relative mt-12 grid items-start gap-10 lg:grid-cols-2 lg:gap-16">
             <div className="pointer-events-none absolute left-1/2 top-3 hidden h-[86%] w-px -translate-x-1/2 bg-white/45 lg:block" />
@@ -831,24 +831,83 @@ export default function Home() {
 
       {/* FAQ Section */}
       <section id="preguntas" className="bg-[#ececed] py-16 lg:py-20">
-        <div className="mx-auto max-w-4xl px-6">
+        <div className="mx-auto max-w-6xl px-6">
           <h2 className="text-center text-4xl font-bold text-slate-900 md:text-5xl">Preguntas</h2>
           <p className="mt-4 text-center text-2xl text-slate-500">Respuestas a lo que importa</p>
 
-          <div className="mt-10 flex flex-col gap-4">
+          <div className="mt-10 grid gap-6 items-start md:grid-cols-2">
             {[
-              "¿Cuál es el nivel de experiencia requerido?",
-              "¿Qué pasa después del curso?",
-              "¿Puedo hacer el curso en mi horario?",
-            ].map((question, index) => (
-              <button
+              {
+                question: "¿Qué voy a lograr al terminar el día?",
+                answer:
+                  "Saldrás con tres entregables concretos: un prototipo funcional de solución a tu reto de negocio, una hoja de ruta de implementación lista para presentar a tu equipo o liderazgo, y el Método EurekAI interiorizado para poder repetirlo en cualquier reto futuro. Lo que a un equipo le toma meses de reuniones, aquí lo estructuras en un solo día.",
+              },
+              {
+                question: "¿Cuál es el nivel de experiencia requerido?",
+                answer:
+                  "No necesitas ser experto en IA ni en innovación. El bootcamp está diseñado para líderes, gerentes, emprendedores y ejecutivos que quieren resolver problemas reales de negocio. Lo único que necesitas traer es un reto concreto de tu empresa u organización. Nosotros te damos el método, las herramientas y el acompañamiento para resolverlo ese mismo día.",
+              },
+              {
+                question: "¿Este bootcamp sirve para cualquier tipo de empresa o industria?",
+                answer:
+                  "Sí. El Método EurekAI ha sido aplicado en empresas de tecnología, finanzas, salud, retail, educación, logística y más. No importa el sector — lo que importa es que traigas un reto real y las ganas de trabajarlo. Hemos visto el método funcionar desde startups hasta grandes corporativos y entidades del sector público.",
+              },
+              {
+                question: "¿Puedo hacer el bootcamp en mi horario o hay versión virtual?",
+                answer:
+                  "Este bootcamp es 100% presencial — esa es precisamente su magia. El modelo de aprendizaje intensivo requiere tu presencia completa el sábado 9 de mayo, de 8:00 AM a 6:00 PM, en Hannah Hopes, Usaquén, Bogotá. No existe versión virtual ni grabación. Lo que se construye en el espacio, con la energía del grupo y la facilitación en vivo, no se replica en un video.",
+              },
+              {
+                question: "¿Cuánto cuesta y cuáles son las opciones de pago?",
+                answer:
+                  "El valor regular del bootcamp es $2.750.000 COP. Para quienes se inscriban con el precio especial de lanzamiento, el valor es $2.200.000 COP (20% de descuento). El pago se realiza de forma segura a través de nuestra pasarela de pagos y se emite factura corporativa. Si tu empresa requiere otro proceso de facturación, escríbenos directamente.",
+              },
+              {
+                question: "¿Qué incluye exactamente mi inscripción?",
+                answer:
+                  "Tu inscripción incluye: acceso al bootcamp presencial completo (8AM–6PM), brunch y almuerzo, el toolkit digital EurekAI, tu insignia blockchain Credly verificable en LinkedIn, acceso a la Comunidad Alumni en WhatsApp y 1 mes de soporte post-evento. Si te inscribes con el precio especial del webinar, también recibes el Sandbox EurekAI (prompts exclusivos listos para usar), el Kit de Aplicación (plantillas y estructuras de trabajo) y 3 bonos adicionales de recursos.",
+              },
+              {
+                question: "¿Puedo inscribir a mi equipo o comprar más de un cupo?",
+                answer:
+                  "Sí, y de hecho es una de las formas más poderosas de aprovechar el bootcamp. Si traes a tu equipo, todos trabajan sobre el mismo reto y salen alineados con el mismo método y prototipo. Escríbenos directamente para coordinar inscripciones grupales y opciones de facturación corporativa. Los cupos son limitados a 25 personas, así que te recomendamos no esperar.",
+              },
+              {
+                question: "¿Dónde es el bootcamp exactamente?",
+                answer:
+                  "El bootcamp se realiza en Hannah Hopes, Usaquén, Bogotá, el sábado 9 de mayo de 2025, de 8:00 AM a 6:00 PM. Es un espacio diseñado para experiencias de alto impacto, con toda la infraestructura que necesitas para trabajar en profundidad durante el día.",
+              },
+              {
+                question: "¿Qué debo llevar el día del bootcamp?",
+                answer:
+                  "Solo tu computador portátil (o tablet) y el reto de negocio que quieres resolver. Nosotros nos encargamos del resto: metodología, herramientas de IA, materiales, brunch, almuerzo y todo lo que necesitas para que el día fluya sin fricción.",
+              },
+              {
+                question: "¿Qué pasa si aplico el método y no logro desbloquear mi reto?",
+                answer:
+                  "Tenemos una garantía clara: si el día del bootcamp participas activamente, aplicas las herramientas y aun así sientes que tu reto no avanzó, te regalamos una sesión privada de 45 minutos 1 a 1 con Andrés y César para destrabarlo juntos. El riesgo lo asumimos nosotros.",
+              },
+              {
+                question: "¿Qué pasa después del bootcamp?",
+                answer:
+                  "El día del bootcamp es solo el comienzo. Al finalizar tendrás acceso a la Comunidad Alumni EurekAI en WhatsApp con nutrición continua, actualizaciones y conexión con otros profesionales. Además, incluye 1 mes de soporte post-evento para acompañarte en la implementación de lo que construiste. Y si vienes con el precio especial del webinar, también recibes los 3 bonos adicionales para seguir avanzando por tu cuenta.",
+              },
+              {
+                question: "¿Qué es la insignia Credly y para qué sirve?",
+                answer:
+                  "Es una certificación digital verificable en blockchain que acredita tu participación y los conocimientos adquiridos en el Bootcamp EurekAI. Puedes agregarla directamente a tu perfil de LinkedIn, compartirla con tu empresa o incluirla en tu hoja de vida. Es la prueba tangible de que no solo asististe — sino que construiste algo real.",
+              },
+            ].map((faq, index) => (
+              <details
                 key={index}
-                type="button"
-                className="flex items-center justify-between rounded-2xl border border-slate-200 bg-white px-6 py-5 text-left shadow-sm transition hover:border-slate-300"
+                className="group w-full rounded-[2rem] border-2 border-slate-300 bg-white/95 p-7 shadow-lg shadow-slate-950/5 transition hover:border-slate-400"
               >
-                <span className="text-2xl font-semibold text-slate-800">{question}</span>
-                <ChevronDown className="h-6 w-6 text-slate-500" />
-              </button>
+                <summary className="flex cursor-pointer items-center justify-between text-lg font-semibold text-slate-900 md:text-[1rem]">
+                  {faq.question}
+                  <ChevronDown className="h-6 w-6 text-slate-500 transition duration-200 group-open:-rotate-180" />
+                </summary>
+                <p className="mt-5 text-base leading-8 text-slate-700">{faq.answer}</p>
+              </details>
             ))}
           </div>
         </div>
