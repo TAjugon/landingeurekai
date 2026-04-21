@@ -745,6 +745,7 @@ export default function Home() {
           <h2 className="text-[4.4rem] font-extrabold uppercase tracking-[0.015em] text-[#fd7914] sm:text-[4.9rem] lg:text-[5.4rem]">
             Early Bird
           </h2>
+          <div id="reserva-middle" className="block h-0 mt-3" />
           <p className="mt-3 text-[2.1rem] font-semibold text-white/90 sm:text-[2.5rem] lg:text-[2.8rem]">
             Precio especial hasta el 01 de mayo
           </p>
