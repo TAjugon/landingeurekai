@@ -99,7 +99,7 @@ export default function Home() {
     {
       quote:
         "La metodología de aprender creando, combinada con ejercicios reales, transformó mi práctica como médica. Descubrí cómo acercarme a las verdaderas necesidades de mis pacientes y caminar hacia la excelencia en salud.",
-      name: "Johanna Vásquez Blanco",
+      name: "Johanna Vásquez B",
       role: "Pediatra",
       company: "Los Cobos Medical Center",
       image: "/johanna.jpeg",
@@ -204,6 +204,9 @@ export default function Home() {
               Tu empresa, tus gerentes y tu equipo no quieren más demos de IA ni innovaciones sin sentido. Quieren ROI.
               Únete al único bootcamp que te permite entrar con un reto de negocio a las 8:00 AM y salir con un
               prototipo funcional y un plan validado a las 6:00 PM.
+            </p>
+            <p className="mt-4 max-w-xl text-lg font-semibold leading-relaxed text-[#fd7914] md:text-xl">
+              Hannah Hopes, Usaquén, Bogotá
             </p>
 
           </div>
@@ -746,7 +749,7 @@ export default function Home() {
             Precio especial hasta el 01 de mayo
           </p>
 
-          <div id="reserva-middle" className="absolute left-0 top-[36%] h-0 w-full" />
+          <div id="reserva-middle" className="absolute left-0 h-0 w-full" style={{ top: "calc(36% - 10px)" }} />
           <div id="reserva-countdown" className="mx-auto mt-8 inline-flex justify-center rounded-[1.35rem] bg-white/10 px-4 py-4 shadow-[0_24px_60px_rgba(2,8,23,0.22)] sm:px-6">
             <CountdownTimer
               targetDate="2026-05-01T00:00:00-05:00"
