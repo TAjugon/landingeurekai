@@ -109,7 +109,7 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       {/* Banner promocional */}
-      <a href="#reserva-middle" className="relative z-40 block bg-[#fd7914] py-1.5 text-center transition-colors hover:bg-[#ff7a1a] md:py-2">
+      <a href="#reserva" className="relative z-40 block bg-[#fd7914] py-1.5 text-center transition-colors hover:bg-[#ff7a1a] md:py-2">
         <p className="text-xs font-semibold uppercase tracking-[0.12em] text-white md:text-sm">
           Transforma tu negocio en un solo día. Aprovecha el 20% de descuento por tiempo limitado !
         </p>
@@ -160,7 +160,7 @@ export default function Home() {
           {/* CTA Button */}
           <div className="ml-auto flex items-center gap-4">
             <a
-              href="#reserva-middle"
+              href="#reserva"
               className="hidden rounded-full bg-[#fd7914] px-9 py-2.5 text-base font-semibold text-white transition-all hover:bg-[#fd7914] md:inline-block"
             >
               Inscríbete
@@ -280,7 +280,7 @@ export default function Home() {
 
           <div className="mt-10 flex justify-center">
             <a
-              href="#reserva-middle"
+              href="#reserva"
               className="inline-flex rounded-full bg-[#fd7914] px-12 py-4 text-base font-bold uppercase text-white shadow-lg shadow-[#fd7914]/30 transition hover:bg-[#ff7a29]"
             >
               QUIERO RESERVAR MI CUPO AHORA
@@ -749,7 +749,6 @@ export default function Home() {
             Precio especial hasta el 01 de mayo
           </p>
 
-          <div id="reserva-middle" className="absolute left-0 h-0 w-full" style={{ top: "calc(36% - 10px)" }} />
           <div id="reserva-countdown" className="mx-auto mt-8 inline-flex justify-center rounded-[1.35rem] bg-white/10 px-4 py-4 shadow-[0_24px_60px_rgba(2,8,23,0.22)] sm:px-6">
             <CountdownTimer
               targetDate="2026-05-01T00:00:00-05:00"
