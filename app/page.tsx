@@ -109,7 +109,7 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       {/* Banner promocional */}
-      <a href="#reserva" className="relative z-40 block bg-[#fd7914] py-1.5 text-center transition-colors hover:bg-[#ff7a1a] md:py-2">
+      <a href="#reserva-middle" className="relative z-40 block bg-[#fd7914] py-1.5 text-center transition-colors hover:bg-[#ff7a1a] md:py-2">
         <p className="text-xs font-semibold uppercase tracking-[0.12em] text-white md:text-sm">
           Transforma tu negocio en un solo día. Aprovecha el 20% de descuento por tiempo limitado !
         </p>
@@ -160,7 +160,7 @@ export default function Home() {
           {/* CTA Button */}
           <div className="ml-auto flex items-center gap-4">
             <a
-              href="#reserva"
+              href="#reserva-middle"
               className="hidden rounded-full bg-[#fd7914] px-9 py-2.5 text-base font-semibold text-white transition-all hover:bg-[#fd7914] md:inline-block"
             >
               Inscríbete
@@ -280,7 +280,7 @@ export default function Home() {
 
           <div className="mt-10 flex justify-center">
             <a
-              href="#reserva"
+              href="#reserva-middle"
               className="inline-flex rounded-full bg-[#fd7914] px-12 py-4 text-base font-bold uppercase text-white shadow-lg shadow-[#fd7914]/30 transition hover:bg-[#ff7a29]"
             >
               QUIERO RESERVAR MI CUPO AHORA
@@ -757,6 +757,7 @@ export default function Home() {
               className="text-white"
             />
           </div>
+          <div id="reserva-middle" className="absolute left-0 right-0 top-[calc(50%+1rem)] h-0" />
 
           <div className="relative mt-12 grid items-start gap-10 lg:grid-cols-2 lg:gap-16">
             <div className="pointer-events-none absolute left-1/2 top-3 hidden h-[86%] w-px -translate-x-1/2 bg-white/45 lg:block" />
