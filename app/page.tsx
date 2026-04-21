@@ -200,15 +200,16 @@ export default function Home() {
               </span>
             </h1>
 
-            <p className="mt-8 max-w-xl text-lg leading-relaxed text-slate-200 md:text-xl">
-              Tu empresa, tus gerentes y tu equipo no quieren más demos de IA ni innovaciones sin sentido. Quieren ROI.
+            <p className="mt-8 max-w-3xl text-lg leading-relaxed text-slate-200 md:text-xl">
+              Tu empresa, tus gerentes y tu equipo no quieren más demos de IA ni innovaciones sin sentido.
+              Quieren ROI.
               Únete al único bootcamp que te permite entrar con un reto de negocio a las 8:00 AM y salir con un
               prototipo funcional y un plan validado a las 6:00 PM.
             </p>
-            <p className="mt-4 max-w-xl text-lg font-semibold leading-relaxed text-[#fd7914] md:text-xl">
-              9 de mayo
+            <p className="mt-6 max-w-3xl text-3xl font-bold uppercase leading-tight text-white sm:text-4xl md:text-[2.8rem] lg:text-[3rem]">
+              9 DE MAYO
             </p>
-            <p className="mt-2 max-w-xl text-lg font-semibold leading-relaxed text-[#fd7914] md:text-xl">
+            <p className="mt-2 max-w-3xl text-lg font-semibold leading-relaxed text-[#fd7914] md:text-xl">
               Hannah Hopes, Usaquén, Bogotá
             </p>
 
@@ -645,9 +646,9 @@ export default function Home() {
                   <Linkedin className="h-4 w-4 text-slate-700" />
                 </a>
               </div>
-              <h3 className="mt-4 text-[1.18rem] font-bold text-[#fd7914] md:text-[1.35rem]">Andrés Rubiano</h3>
+              <h3 className="mt-4 text-[1.18rem] font-bold text-[#fd7914] md:text-[1.35rem]">andrés rubiano</h3>
               <p className="mt-2 max-w-xs text-[1.03rem] leading-relaxed text-slate-700 md:text-[1.08rem]">
-                CEO Eki, experto en innovación corporativa. ha implementado sistemas en 60+ empresas. &quot;el método detrás de la locura&quot;.
+                Ceo eki, experto en innovación corporativa. ha implementado sistemas en 60+ empresas. &quot;el método detrás de la locura&quot;.
               </p>
             </div>
 
