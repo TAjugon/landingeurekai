@@ -63,11 +63,11 @@ export default function TestimonialsCarousel({ testimonials }: TestimonialsCarou
         </>
       )}
 
-      <div className="grid gap-6 md:grid-cols-2">
+      <div className="grid gap-6 md:grid-cols-2 items-stretch">
         {visibleTestimonials.map((testimonial, index) => (
           <article
             key={`${testimonial.name}-${page}-${index}`}
-            className="relative flex min-h-[360px] flex-col overflow-hidden rounded-[2rem] bg-[#061634] p-8 shadow-[0_18px_30px_rgba(2,8,23,0.2)]"
+            className="relative flex h-full min-h-[360px] flex-col overflow-hidden rounded-[2rem] bg-[#061634] p-8 shadow-[0_18px_30px_rgba(2,8,23,0.2)]"
           >
             <div className="pointer-events-none absolute right-0 top-0 h-28 w-28 bg-[radial-gradient(circle_at_top_right,rgba(253,121,20,0.25),transparent_66%)]" />
 

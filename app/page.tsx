@@ -104,67 +104,12 @@ export default function Home() {
       company: "Los Cobos Medical Center",
       image: "/johanna.jpeg",
     },
-    {
-      quote:
-        "Este bootcamp cambió completamente mi perspectiva sobre la innovación. Salí con herramientas concretas que implementé en mi empresa la semana siguiente.",
-      name: "Marcela Gómez",
-      role: "Directora de Innovación",
-    },
-    {
-      quote:
-        "La metodología es increíblemente práctica. En un solo día aprendí más que en meses de cursos online. Los entrenadores tienen experiencia real en el campo.",
-      name: "Roberto Díaz",
-      role: "CEO, TechStartup",
-    },
-    {
-      quote:
-        "La comunidad postcurso sigue siendo mi red de confianza. Encontré colaboradores y mentores que entienden mi contexto.",
-      name: "Sofía Reyes",
-      role: "Fundadora",
-      company: "Agencia digital",
-    },
-    {
-      quote:
-        "Nunca pensé que en un día podría aprender tanto. Los frameworks de IA son aplicables de inmediato. Totalmente recomendado para líderes que quieren resultados.",
-      name: "Carlos Mendoza",
-      role: "Director General",
-    },
-    {
-      quote:
-        "La red de contactos que construí ese día vale más que cualquier inversión. Conecté con líderes de industrias que nunca hubiera conocido de otra forma.",
-      name: "Laura Jiménez",
-      role: "Gerente de Transformación",
-    },
-    {
-      quote:
-        "Andrés y Cesar son entrenadores excepcionales. Su experiencia real en el campo hace que cada concepto sea tangible y aplicable desde el primer momento.",
-      name: "Miguel Torres",
-      role: "CTO, Fintech Colombia",
-    },
-    {
-      quote:
-        "El bootcamp superó todas mis expectativas. El balance entre teoría y práctica es perfecto. Cada ejercicio está diseñado para generar resultados reales.",
-      name: "Ana Vargas",
-      role: "Directora de Estrategia",
-    },
-    {
-      quote:
-        "Recomiendo este bootcamp a cualquier líder que quiera mantenerse relevante en la era de la IA. Es una inversión que se paga sola en el primer proyecto.",
-      name: "Fernando Castro",
-      role: "Gerente de Innovación",
-    },
-    {
-      quote:
-        "Después del bootcamp, mi equipo notó el cambio inmediatamente. Llegué con un plan claro, herramientas concretas y la confianza para implementarlas.",
-      name: "Patricia Morales",
-      role: "VP de Recursos Humanos",
-    },
   ]
 
   return (
     <main className="min-h-screen">
       {/* Banner promocional */}
-      <a href="#reserva-countdown" className="relative z-40 block bg-[#fd7914] py-1.5 text-center transition-colors hover:bg-[#ff7a1a] md:py-2">
+      <a href="#reserva-middle" className="relative z-40 block bg-[#fd7914] py-1.5 text-center transition-colors hover:bg-[#ff7a1a] md:py-2">
         <p className="text-xs font-semibold uppercase tracking-[0.12em] text-white md:text-sm">
           Transforma tu negocio en un solo día. Aprovecha el 20% de descuento por tiempo limitado !
         </p>
@@ -215,7 +160,7 @@ export default function Home() {
           {/* CTA Button */}
           <div className="ml-auto flex items-center gap-4">
             <a
-              href="#reserva-countdown"
+              href="#reserva-middle"
               className="hidden rounded-full bg-[#fd7914] px-9 py-2.5 text-base font-semibold text-white transition-all hover:bg-[#fd7914] md:inline-block"
             >
               Inscríbete
@@ -273,13 +218,25 @@ export default function Home() {
             <div className="mt-4 flex justify-center">
               <CountdownTimer targetDate="2026-05-09T00:00:00-05:00" variant="boxedLight" />
             </div>
-            <div className="mt-8 space-y-2.5">
-              <p className="text-3xl font-extrabold leading-tight text-slate-900 sm:text-4xl lg:text-[2.85rem]">
-                Solo 25 cupos, <span className="text-[#fd7914]">ya tenemos 5 inscritos.</span>
-                <br />
+            <div className="mt-8">
+              <p className="text-3xl font-extrabold leading-tight text-slate-900 sm:text-4xl lg:text-[2.85rem]">Son solo 25 cupos, ya tenemos</p>
+
+              <div className="mt-5 flex justify-center">
+                <div className="relative flex h-24 w-24 items-center justify-center sm:h-28 sm:w-28">
+                  <div className="absolute inset-0 rounded-full border-[5px] border-[#d9d9d9]" />
+                  <div className="absolute inset-0 rounded-full bg-[conic-gradient(from_360deg,_#fd7914_0deg_108deg,_transparent_108deg_360deg)]" />
+                  <div className="absolute inset-[6px] rounded-full bg-white" />
+                  <div className="relative flex flex-col items-center leading-none">
+                    <span className="text-[3rem] font-extrabold text-[#fd7914] sm:text-[3.2rem]">5</span>
+                    <span className="-mt-0.5 text-[0.68rem] font-extrabold uppercase tracking-[0.08em] text-[#fd7914]">Inscritos</span>
+                  </div>
+                </div>
+              </div>
+
+              <p className="mt-6 text-3xl font-extrabold leading-tight text-slate-900 sm:text-4xl lg:text-[2.85rem]">
                 Asegura tu entrada 2026 a precio del 2025.
               </p>
-              <p className="text-3xl font-extrabold leading-tight text-[#fd7914] sm:text-4xl lg:text-[2.8rem]">¡Ahorra un 20% hoy!</p>
+              <p className="mt-1 text-3xl font-extrabold leading-tight text-[#fd7914] sm:text-4xl lg:text-[2.8rem]">¡Ahorra un 20% hoy!</p>
             </div>
           </div>
 
@@ -320,7 +277,7 @@ export default function Home() {
 
           <div className="mt-10 flex justify-center">
             <a
-              href="#reserva-countdown"
+              href="#reserva-middle"
               className="inline-flex rounded-full bg-[#fd7914] px-12 py-4 text-base font-bold uppercase text-white shadow-lg shadow-[#fd7914]/30 transition hover:bg-[#ff7a29]"
             >
               QUIERO RESERVAR MI CUPO AHORA
@@ -789,6 +746,7 @@ export default function Home() {
             Precio especial hasta el 01 de mayo
           </p>
 
+          <div id="reserva-middle" className="absolute left-0 top-[36%] h-0 w-full" />
           <div id="reserva-countdown" className="mx-auto mt-8 inline-flex justify-center rounded-[1.35rem] bg-white/10 px-4 py-4 shadow-[0_24px_60px_rgba(2,8,23,0.22)] sm:px-6">
             <CountdownTimer
               targetDate="2026-05-01T00:00:00-05:00"
