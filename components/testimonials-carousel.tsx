@@ -8,6 +8,8 @@ interface Testimonial {
   name: string
   role: string
   company?: string
+  secondaryRole?: string
+  image?: string
 }
 
 interface TestimonialsCarouselProps {
@@ -82,11 +84,22 @@ export default function TestimonialsCarousel({ testimonials }: TestimonialsCarou
             </p>
 
             <div className="mt-5 border-t border-white/15 pt-5">
-              <p className="text-4xl font-bold leading-tight text-white">{testimonial.name}</p>
-              <p className="mt-1.5 text-xl text-white/85">
-                {testimonial.role}
-                {testimonial.company ? `, ${testimonial.company}` : ""}
-              </p>
+              <div className="flex items-center justify-between gap-4">
+                {testimonial.image && (
+                  <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-full border border-white/20">
+                    <Image src={testimonial.image} alt={`Foto de ${testimonial.name}`} fill className="object-cover" sizes="80px" />
+                  </div>
+                )}
+
+                <div className="min-w-0">
+                  <p className="text-3xl font-bold leading-tight text-white md:text-4xl">{testimonial.name}</p>
+                  <p className="mt-1.5 text-xl text-white/85">
+                    {testimonial.role}
+                    {testimonial.company ? `, ${testimonial.company}` : ""}
+                  </p>
+                  {testimonial.secondaryRole && <p className="text-lg text-white/70">{testimonial.secondaryRole}</p>}
+                </div>
+              </div>
             </div>
           </article>
         ))}

@@ -91,6 +91,21 @@ export default function Home() {
   const testimonials = [
     {
       quote:
+        "La innovación dejó de ser concepto y se convirtió en práctica viva. Aprendí a equivocarme y construir desde la acción. Hoy construyo sistemas de innovación que generan resultados reales en mi empresa.",
+      name: "Claudia Lorena Vargas Correa",
+      role: "Gerente General - Construvid",
+      image: "/claudia.jpeg",
+    },
+    {
+      quote:
+        "La metodología de aprender creando, combinada con ejercicios reales, transformó mi práctica como médica. Descubrí cómo acercarme a las verdaderas necesidades de mis pacientes y caminar hacia la excelencia en salud.",
+      name: "Johanna Vásquez Blanco",
+      role: "Pediatra",
+      company: "Los Cobos Medical Center",
+      image: "/johanna.jpeg",
+    },
+    {
+      quote:
         "Este bootcamp cambió completamente mi perspectiva sobre la innovación. Salí con herramientas concretas que implementé en mi empresa la semana siguiente.",
       name: "Marcela Gómez",
       role: "Directora de Innovación",
@@ -144,19 +159,12 @@ export default function Home() {
       name: "Patricia Morales",
       role: "VP de Recursos Humanos",
     },
-    {
-      quote:
-        "La metodología de aprender creando, combinada con ejercicios reales, transformó mi práctica como médica. Descubrí cómo acercarme a las verdaderas necesidades de mis pacientes y caminar hacia la excelencia en salud.",
-      name: "Johanna Vásquez Blanco",
-      role: "Pediatra",
-      company: "Los Cobos Medical Center",
-    },
   ]
 
   return (
     <main className="min-h-screen">
       {/* Banner promocional */}
-      <a href="#preventa" className="relative z-40 block bg-[#fd7914] py-1.5 text-center transition-colors hover:bg-[#ff7a1a] md:py-2">
+      <a href="#reserva-countdown" className="relative z-40 block bg-[#fd7914] py-1.5 text-center transition-colors hover:bg-[#ff7a1a] md:py-2">
         <p className="text-xs font-semibold uppercase tracking-[0.12em] text-white md:text-sm">
           Transforma tu negocio en un solo día. Aprovecha el 20% de descuento por tiempo limitado !
         </p>
@@ -207,7 +215,7 @@ export default function Home() {
           {/* CTA Button */}
           <div className="ml-auto flex items-center gap-4">
             <a
-              href="#preventa"
+              href="#reserva-countdown"
               className="hidden rounded-full bg-[#fd7914] px-9 py-2.5 text-base font-semibold text-white transition-all hover:bg-[#fd7914] md:inline-block"
             >
               Inscríbete
@@ -275,7 +283,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mx-auto mt-10 grid max-w-[1060px] items-start gap-8 lg:grid-cols-[1fr_auto_1fr] lg:gap-10">
+          <div className="mx-auto mt-10 grid max-w-[1060px] items-stretch gap-8 lg:grid-cols-[1fr_auto_1fr] lg:gap-10">
             <div className="text-left text-slate-800 lg:ml-auto lg:max-w-[470px] lg:pr-6">
               <h3 className="text-[2rem] font-extrabold uppercase tracking-tight">Incluye:</h3>
               <ul className="mt-1.5 list-disc space-y-1.5 pl-7 text-[1.12rem] leading-[1.55] sm:text-[1.22rem]">
@@ -290,7 +298,7 @@ export default function Home() {
 
             <div className="hidden h-full w-px bg-slate-400/75 lg:block" />
 
-            <div className="text-left text-slate-800 mt-8 lg:mt-10 lg:max-w-[560px] lg:pl-12">
+            <div className="text-left text-slate-800 mt-8 lg:mt-0 lg:max-w-[560px] lg:pl-12 lg:flex lg:flex-col lg:justify-end">
               <p className="text-[1.18rem] leading-[1.65] sm:text-[1.3rem] lg:text-[1.32rem]">
                 <span className="font-extrabold">
                   Aprende con metodologías
@@ -312,7 +320,7 @@ export default function Home() {
 
           <div className="mt-10 flex justify-center">
             <a
-              href="#preventa"
+              href="#reserva-countdown"
               className="inline-flex rounded-full bg-[#fd7914] px-12 py-4 text-base font-bold uppercase text-white shadow-lg shadow-[#fd7914]/30 transition hover:bg-[#ff7a29]"
             >
               QUIERO RESERVAR MI CUPO AHORA
@@ -401,7 +409,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-white">Ejecutivos y Empresarios</h3>
-                    <p className="mt-2 text-base leading-7 text-slate-300">
+                    <p className="mt-2 text-base leading-7 text-slate-300" style={{ textWrap: "pretty" }}>
                       Que no tienen tiempo para cursos de un mes y necesitan entender el &quot;How-to&quot; estratégico en 8 horas.
                     </p>
                   </div>
@@ -439,14 +447,14 @@ export default function Home() {
 
           <div className="grid gap-6 md:grid-cols-2 lg:gap-8">
             {/* Card SI */}
-            <div className="flex flex-col rounded-[2rem] bg-[#fd7914] p-6 lg:p-8 shadow-[0_20px_50px_rgba(253,121,20,0.15)]">
+            <div className="flex h-full flex-col justify-start rounded-[2rem] bg-[#fd7914] p-6 lg:p-8 shadow-[0_20px_50px_rgba(253,121,20,0.15)]">
               <div className="mb-6">
                 <div className="flex h-16 w-16 items-center justify-center rounded-full border-[5px] border-white/95">
                   <Check className="h-10 w-10 text-white" strokeWidth={4} />
                 </div>
                 <h3 className="mt-4 text-[1.95rem] font-extrabold leading-tight text-white md:text-[2.55rem]">SI es para ti:</h3>
               </div>
-              <ul className="flex flex-col gap-4 text-base font-semibold text-white/95 md:text-lg">
+              <ul className="flex flex-1 flex-col justify-between gap-4 text-base font-semibold text-white/95 md:text-lg" style={{ textWrap: "pretty" }}>
                 <li className="flex items-start gap-3">
                   <span className="mt-3 h-2.5 w-2.5 shrink-0 rounded-full bg-white" />
                   <span className="leading-relaxed">Eres un emprendedor o un líder en tu empresa, y quieres llevar tus proyectos a otro nivel.</span>
@@ -467,14 +475,14 @@ export default function Home() {
             </div>
 
             {/* Card NO */}
-            <div className="flex flex-col rounded-[2rem] bg-[#0f172a] p-6 lg:p-8 shadow-[0_20px_50px_rgba(15,23,42,0.2)]">
+            <div className="flex h-full flex-col justify-start rounded-[2rem] bg-[#0f172a] p-6 lg:p-8 shadow-[0_20px_50px_rgba(15,23,42,0.2)]">
               <div className="mb-6">
                 <div className="flex h-16 w-16 items-center justify-center rounded-full border-[5px] border-white/95">
                   <X className="h-10 w-10 text-white" strokeWidth={4} />
                 </div>
                 <h3 className="mt-4 text-[1.95rem] font-extrabold leading-tight text-white md:text-[2.55rem]">NO es para ti:</h3>
               </div>
-              <ul className="flex flex-col gap-4 text-base font-semibold text-white/90 md:text-lg">
+              <ul className="flex flex-1 flex-col justify-between gap-4 text-base font-semibold text-white/90 md:text-lg" style={{ textWrap: "pretty" }}>
                 <li className="flex items-start gap-3">
                   <span className="mt-3 h-2.5 w-2.5 shrink-0 rounded-full bg-white/90" />
                   <span className="leading-relaxed">Buscas un curso genérico para aprender IA, hacer prompting o aprender exclusivamente aplicaciones de IA.</span>
@@ -525,9 +533,9 @@ export default function Home() {
                   { time: "9:00", activity: "Revisión de tendencias (Radar)" },
                   { time: "9:45", activity: <strong>Break</strong> },
                   { time: "10:00", activity: "Definición del Reto, Arbol de Problemas, 5 Porqués, IA" },
-                  { time: "11:00", activity: "Ideación, Lego Serious Play y brainstorming asistido con IA" },
+                  { time: "11:00", activity: "Ideación, Lego Serious Play y brainstorming con IA" },
                   { time: "12:00", activity: <strong>Almuerzo</strong> },
-                  { time: "1:30", activity: "Prototipado: Brochure, Safari, Agente de prototipado con IA" },
+                  { time: "1:30", activity: "Prototipado: Brochure, Safari, Agente de prototipado IA" },
                   { time: "3:30", activity: <strong>Break</strong> },
                   { time: "3:45", activity: "Implementación: Trello y asistente de IA" },
                   { time: "5:00", activity: "Pitch & Shark Tank con jurados invitados expertos en innovación" },
@@ -537,7 +545,7 @@ export default function Home() {
                     {/* Punto naranja */}
                     <div className="relative z-10 mt-1 h-6 w-6 shrink-0 rounded-full bg-[#fd7914]" />
                     {/* Contenido */}
-                    <p className="text-lg text-slate-700">
+                    <p className="text-lg text-slate-700" style={{ textWrap: "pretty" }}>
                       <span className="font-bold">{item.time}:</span> {item.activity}
                     </p>
                   </div>
@@ -562,33 +570,34 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="flex min-h-[206px] flex-col items-center justify-between text-center md:min-h-[226px]">
-                <div className="icon1 mt-1 flex h-[58px] w-[58px] items-center justify-center">
-                  <Image src="/icono70.svg" alt="Icono 70" width={52} height={52} className="object-contain" />
+              <div className="flex min-h-[180px] flex-col items-center justify-center gap-4 text-center md:min-h-[190px]">
+                <div className="icon1 flex h-[72px] w-[72px] items-center justify-center">
+                  <Image src="/icono70.svg" alt="Icono 70" width={60} height={60} className="object-contain" />
                 </div>
-                <span className="block text-[3.5rem] font-black leading-none text-white md:text-[4.4rem]">70%</span>
-                <span className="text-[1.6rem] font-semibold text-white md:text-[2rem]">Práctico</span>
+                <div className="flex flex-col items-center gap-2">
+                  <span className="block text-[3.5rem] font-black leading-none text-white md:text-[4.4rem]">70%</span>
+                  <span className="text-[1.7rem] font-semibold text-white md:text-[2.1rem]">Práctico</span>
+                </div>
               </div>
 
-              <div className="flex min-h-[206px] flex-col items-center justify-between border-l border-white/70 text-center md:min-h-[226px] md:pl-4 lg:pl-5">
-                <div className="icon2 mt-1 flex h-[64px] w-[64px] items-center justify-center md:h-[4.3rem] md:w-[4.3rem]">
-                  <Image src="/icono30.svg" alt="Icono 30" width={56} height={56} className="object-contain" />
+              <div className="flex min-h-[180px] flex-col items-center justify-center gap-4 border-l border-white/70 px-3 text-center md:min-h-[190px] md:px-4">
+                <div className="icon2 flex h-[72px] w-[72px] items-center justify-center">
+                  <Image src="/icono30.svg" alt="Icono 30" width={60} height={60} className="object-contain" />
                 </div>
-                <span className="block text-[3.5rem] font-black leading-none text-white md:text-[4.4rem]">30%</span>
-                <span className="text-[1.6rem] font-semibold text-white md:text-[2rem]">Teórico</span>
+                <div className="flex flex-col items-center gap-2">
+                  <span className="block text-[3.5rem] font-black leading-none text-white md:text-[4.4rem]">30%</span>
+                  <span className="text-[1.7rem] font-semibold text-white md:text-[2.1rem]">Teórico</span>
+                </div>
               </div>
             </div>
           </div>
 
           {/* Título */}
-          <div className="mt-16 text-center">
-            <h2 className="text-[2.2rem] font-bold text-slate-800 md:text-[2.6rem] lg:text-[2.9rem]">
-              Te llevas muchísimo más que un diploma
-            </h2>
-            <p className="mt-2 text-2xl font-bold text-[#fd7914] md:text-3xl lg:text-4xl">
-              Te llevas un Sistema Operativo de Innovación.
-            </p>
-          </div>
+          <h2 className="mt-16 text-center text-3xl font-bold leading-tight text-slate-800 md:text-4xl lg:text-5xl">
+            Te llevas muchísimo más que un diploma
+            <br />
+            <span className="text-[#fd7914]">Te llevas un Sistema Operativo de Innovación.</span>
+          </h2>
 
           {/* Cards de beneficios */}
           <div className="mt-12">
@@ -675,7 +684,7 @@ export default function Home() {
               </div>
               <h3 className="mt-4 text-[1.18rem] font-bold text-[#fd7914] md:text-[1.35rem]">Andrés Rubiano</h3>
               <p className="mt-2 max-w-xs text-[1.03rem] leading-relaxed text-slate-700 md:text-[1.08rem]">
-                CEO EKI, experto en innovación corporativa. Ha implementado sistemas en 60+ empresas. &quot;El método detrás de la locura&quot;.
+                CEO Eki, experto en innovación corporativa. ha implementado sistemas en 60+ empresas. &quot;el método detrás de la locura&quot;.
               </p>
             </div>
 
@@ -780,7 +789,7 @@ export default function Home() {
             Precio especial hasta el 01 de mayo
           </p>
 
-          <div className="mx-auto mt-8 inline-flex justify-center rounded-[1.35rem] bg-white/10 px-4 py-4 shadow-[0_24px_60px_rgba(2,8,23,0.22)] sm:px-6">
+          <div id="reserva-countdown" className="mx-auto mt-8 inline-flex justify-center rounded-[1.35rem] bg-white/10 px-4 py-4 shadow-[0_24px_60px_rgba(2,8,23,0.22)] sm:px-6">
             <CountdownTimer
               targetDate="2026-05-01T00:00:00-05:00"
               variant="boxed"
@@ -862,7 +871,7 @@ export default function Home() {
       {/* FAQ Section */}
       <section id="preguntas" className="bg-[#ececed] py-16 lg:py-20">
         <div className="mx-auto max-w-4xl px-6">
-          <h2 className="text-center text-5xl font-bold text-slate-900 md:text-6xl">Preguntas</h2>
+          <h2 className="text-center text-4xl font-bold text-slate-900 md:text-5xl">Preguntas</h2>
           <p className="mt-4 text-center text-2xl text-slate-500">Respuestas a lo que importa</p>
 
           <div className="mt-10 flex flex-col gap-4">
@@ -887,7 +896,7 @@ export default function Home() {
       {/* Contact CTA Section */}
       <section id="contacto" className="bg-[#5a5a5d] py-16 lg:py-20">
         <div className="mx-auto max-w-4xl px-6 text-center text-white">
-          <h2 className="text-5xl font-bold md:text-6xl">¿Tienes dudas?</h2>
+          <h2 className="text-4xl font-bold md:text-5xl">¿Tienes dudas?</h2>
           <p className="mx-auto mt-6 max-w-[34rem] text-base leading-relaxed text-white/90 md:text-lg">
             Escríbenos por WhatsApp y te ayudamos a resolver tus dudas. Queremos que tomes una decisión con claridad y sin presiones.
           </p>
@@ -906,11 +915,11 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="bg-[#081523] text-white">
-        <div className="mx-auto max-w-6xl px-6 py-16 lg:py-20">
-          <div className="grid gap-10 lg:grid-cols-[1.3fr_1.7fr] lg:items-end">
+        <div className="mx-auto max-w-6xl px-6 py-12 lg:py-16">
+          <div className="grid gap-8 lg:grid-cols-[1.3fr_1.7fr] lg:items-end">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.3em] text-slate-400">Mantente informado</p>
-              <h3 className="mt-4 max-w-xl text-3xl font-semibold text-white sm:text-4xl">
+              <h3 className="mt-4 max-w-xl text-2xl font-semibold text-white sm:text-3xl">
                 Recibe actualizaciones sobre nuevas cohortes
               </h3>
             </div>
@@ -920,11 +929,11 @@ export default function Home() {
                 <input
                   type="email"
                   placeholder="Tu correo aquí"
-                  className="w-full bg-transparent px-6 py-4 text-lg text-white placeholder:text-white/55 focus:outline-none"
+                  className="w-full bg-transparent px-5 py-3 text-base text-white placeholder:text-white/55 focus:outline-none"
                 />
                 <button
                   type="button"
-                  className="rounded-r-full bg-[#fd7914] px-10 text-lg font-semibold text-white transition hover:bg-[#fd7914]"
+                  className="rounded-r-full bg-[#fd7914] px-8 text-base font-semibold text-white transition hover:bg-[#fd7914]"
                 >
                   Suscríbete
                 </button>
@@ -935,7 +944,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-14 grid gap-8 text-white/90 md:grid-cols-4 md:gap-4">
+          <div className="mt-10 grid gap-6 text-white/90 md:grid-cols-4 md:gap-4">
             <div>
               <h4 className="text-xl font-semibold text-white">Programas</h4>
               <ul className="mt-5 space-y-3 text-base">
@@ -978,10 +987,10 @@ export default function Home() {
         </div>
 
         <div className="border-t border-white/10 bg-black">
-          <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 py-5 sm:flex-row">
+          <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 py-4 sm:flex-row">
             <Link href="/" className="flex items-center gap-3">
               <Image
-                src="/placeholder-logo.png"
+                src="/LogoEurekai-WTH.png"
                 alt="EurekAI logo"
                 width={140}
                 height={42}
