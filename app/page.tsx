@@ -748,10 +748,9 @@ export default function Home() {
           <p className="text-lg font-semibold uppercase tracking-[0.2em] text-white/80 sm:text-xl">
             9 de mayo · Hannah Hopes, Usaquén, Bogotá
           </p>
-          <h2 className="text-[4.4rem] font-extrabold uppercase tracking-[0.015em] text-[#fd7914] sm:text-[4.9rem] lg:text-[5.4rem]">
+          <h2 id="reserva-middle" className="text-[4.4rem] font-extrabold uppercase tracking-[0.015em] text-[#fd7914] sm:text-[4.9rem] lg:text-[5.4rem]">
             Early Bird
           </h2>
-          <div id="reserva-middle" className="block h-0 mt-3" />
           <p className="mt-3 text-[2.1rem] font-semibold text-white/90 sm:text-[2.5rem] lg:text-[2.8rem]">
             Precio especial hasta el 01 de mayo
           </p>
@@ -764,7 +763,6 @@ export default function Home() {
               className="text-white"
             />
           </div>
-          <div id="reserva-middle" className="absolute left-0 right-0 top-[calc(50%+1rem+5px)] h-0" />
 
           <div className="relative mt-12 grid items-start gap-10 lg:grid-cols-2 lg:gap-16">
             <div className="pointer-events-none absolute left-1/2 top-3 hidden h-[86%] w-px -translate-x-1/2 bg-white/45 lg:block" />
