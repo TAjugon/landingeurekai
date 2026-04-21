@@ -92,7 +92,7 @@ export default function Home() {
     {
       quote:
         "La innovación dejó de ser concepto y se convirtió en práctica viva. Aprendí a equivocarme y construir desde la acción. Hoy construyo sistemas de innovación que generan resultados reales en mi empresa.",
-      name: "Claudia Vargas Correa",
+      name: "Claudia Varga C",
       role: "Gerente General - Construvid",
       image: "/claudia.jpeg",
     },
@@ -206,6 +206,9 @@ export default function Home() {
               prototipo funcional y un plan validado a las 6:00 PM.
             </p>
             <p className="mt-4 max-w-xl text-lg font-semibold leading-relaxed text-[#fd7914] md:text-xl">
+              9 de mayo
+            </p>
+            <p className="mt-2 max-w-xl text-lg font-semibold leading-relaxed text-[#fd7914] md:text-xl">
               Hannah Hopes, Usaquén, Bogotá
             </p>
 
@@ -742,6 +745,9 @@ export default function Home() {
         </div>
 
         <div className="relative mx-auto max-w-[1440px] px-6 text-center text-white">
+          <p className="text-lg font-semibold uppercase tracking-[0.2em] text-white/80 sm:text-xl">
+            9 de mayo · Hannah Hopes, Usaquén, Bogotá
+          </p>
           <h2 className="text-[4.4rem] font-extrabold uppercase tracking-[0.015em] text-[#fd7914] sm:text-[4.9rem] lg:text-[5.4rem]">
             Early Bird
           </h2>

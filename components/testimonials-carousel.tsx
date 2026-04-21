@@ -91,7 +91,7 @@ export default function TestimonialsCarousel({ testimonials }: TestimonialsCarou
                   </div>
                 )}
 
-                <div className="min-w-0">
+                <div className="min-w-0 text-right">
                   <p className="text-3xl font-bold leading-tight text-white md:text-4xl">{testimonial.name}</p>
                   <p className="mt-1.5 text-xl text-white/85">
                     {testimonial.role}
