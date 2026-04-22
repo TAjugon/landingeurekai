@@ -786,9 +786,9 @@ export default function Home() {
 
           <div className="mt-10 flex flex-col items-center">
             <a
-              href={actionLinks.whatsapp}
+              href="https://checkout.wompi.co/l/bnKoLi"
               target="_blank"
-              rel="noreferrer"
+              rel="noreferrer noopener"
               className="inline-flex rounded-full bg-[#fd7914] px-12 py-5 text-2xl font-bold uppercase tracking-wide text-white shadow-lg shadow-[#fd7914]/40 transition hover:bg-[#fd7914] sm:px-16"
             >
               !Reserva tu cupo ahora!
