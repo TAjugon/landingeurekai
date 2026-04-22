@@ -691,21 +691,19 @@ export default function Home() {
             y líderes de <span className="text-[#fd7914]">grandes empresas:</span>
           </h2>
 
-          {/* Carrusel de marcas */}
-          <div className="brands-marquee mt-12 overflow-hidden py-7">
-            <div className="brands-track justify-center">
-              {brandLogos.map((logo, index) => (
-                <div key={`${logo.alt}-${index}`} className="brands-item flex h-12 min-w-[170px] items-center justify-center">
-                  <Image
-                    src={logo.src}
-                    alt={logo.alt}
-                    width={170}
-                    height={52}
-                    className="h-11 w-auto object-contain grayscale opacity-85"
-                  />
-                </div>
-              ))}
-            </div>
+          {/* Marcas estáticas */}
+          <div className="mt-12 flex justify-center py-7">
+            {brandLogos.map((logo, index) => (
+              <div key={`${logo.alt}-${index}`} className="flex h-12 min-w-[170px] items-center justify-center">
+                <Image
+                  src={logo.src}
+                  alt={logo.alt}
+                  width={170}
+                  height={52}
+                  className="h-11 w-auto object-contain grayscale opacity-85"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>

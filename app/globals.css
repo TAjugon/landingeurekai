@@ -126,15 +126,18 @@
 
 .brands-marquee {
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .brands-track {
   display: flex;
   align-items: center;
   gap: 0;
-  width: max-content;
-  padding-right: 2.75rem;
-  animation: brand-marquee 58s linear infinite;
+  width: auto;
+  padding-right: 0;
+  animation: none !important;
+  transform: none !important;
   will-change: transform;
 }
 
@@ -144,16 +147,6 @@
   flex-shrink: 0;
 }
 
-.brands-item::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 1px;
-  height: 4.2rem;
-  background: rgba(15, 23, 42, 0.18);
-}
 
 .brands-marquee:hover .brands-track {
   animation-play-state: paused;
