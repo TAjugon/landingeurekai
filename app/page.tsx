@@ -221,7 +221,7 @@ export default function Home() {
       <section id="cursos" className="bg-white pt-10 pb-14 lg:pt-10 lg:pb-16">
         <div className="mx-auto max-w-6xl px-6">
           <div className="text-center">
-            <p className="text-2xl font-extrabold uppercase tracking-tight text-[#fd7914] sm:text-[2.1rem]">¡FALTAN POCOS DÍAS!</p>
+            <p className="mt-[10px] text-2xl font-extrabold uppercase tracking-tight text-[#fd7914] sm:text-[2.1rem]">¡FALTAN POCOS DÍAS!</p>
             <div className="mt-4 flex justify-center">
               <CountdownTimer targetDate="2026-05-09T00:00:00-05:00" variant="boxedLight" />
             </div>
