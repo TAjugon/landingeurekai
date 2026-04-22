@@ -218,7 +218,7 @@ export default function Home() {
       </section>
 
       {/* Reserva rápida Section */}
-      <section id="cursos" className="bg-white pt-4 pb-14 lg:pt-6 lg:pb-16">
+      <section id="cursos" className="bg-white pt-10 pb-14 lg:pt-10 lg:pb-16">
         <div className="mx-auto max-w-6xl px-6">
           <div className="text-center">
             <p className="text-2xl font-extrabold uppercase tracking-tight text-[#fd7914] sm:text-[2.1rem]">¡FALTAN POCOS DÍAS!</p>
