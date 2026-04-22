@@ -35,6 +35,19 @@ export default function Home() {
   }
 
   const brandLogos = [
+    { src: "/Alfa.png", alt: "Alfa" },
+    { src: "/BancoAzteca.png", alt: "Banco Azteca" },
+    { src: "/Carvajal.png", alt: "Carvajal" },
+    { src: "/Compensar.png", alt: "Compensar" },
+    { src: "/D1.png", alt: "D1" },
+    { src: "/Envia.png", alt: "Envia" },
+    { src: "/GrupoBolivar.png", alt: "Grupo Bolívar" },
+    { src: "/Keraltu.png", alt: "Keraltu" },
+    { src: "/MacPollo.png", alt: "MacPollo" },
+    { src: "/Nestle.png", alt: "Nestlé" },
+    { src: "/Proteccion.png", alt: "Protección" },
+    { src: "/Sodexo.png", alt: "Sodexo" },
+    { src: "/UniversidaddelRosario.png", alt: "Universidad del Rosario" },
     { src: "/Bancolombia.png", alt: "Bancolombia" },
   ]
 
@@ -691,19 +704,21 @@ export default function Home() {
             y líderes de <span className="text-[#fd7914]">grandes empresas:</span>
           </h2>
 
-          {/* Marcas estáticas */}
-          <div className="mt-12 flex justify-center py-7">
-            {brandLogos.map((logo, index) => (
-              <div key={`${logo.alt}-${index}`} className="flex h-12 min-w-[170px] items-center justify-center">
-                <Image
-                  src={logo.src}
-                  alt={logo.alt}
-                  width={170}
-                  height={52}
-                  className="h-11 w-auto object-contain grayscale opacity-85"
-                />
-              </div>
-            ))}
+          {/* Carrusel de marcas */}
+          <div className="brands-marquee mt-12 overflow-hidden py-7">
+            <div className="brands-track">
+              {[...brandLogos, ...brandLogos].map((logo, index) => (
+                <div key={`${logo.alt}-${index}`} className="brands-item flex h-12 min-w-[170px] items-center justify-center">
+                  <Image
+                    src={logo.src}
+                    alt={logo.alt}
+                    width={170}
+                    height={52}
+                    className="h-11 w-auto object-contain grayscale opacity-85"
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>

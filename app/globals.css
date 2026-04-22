@@ -134,10 +134,9 @@
   display: flex;
   align-items: center;
   gap: 0;
-  width: auto;
-  padding-right: 0;
-  animation: none !important;
-  transform: none !important;
+  width: max-content;
+  padding-right: 2.75rem;
+  animation: brand-marquee 58s linear infinite;
   will-change: transform;
 }
 
