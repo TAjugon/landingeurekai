@@ -35,12 +35,7 @@ export default function Home() {
   }
 
   const brandLogos = [
-    { src: "/Amazon.png", alt: "Amazon" },
-    { src: "/seguros Estado.png", alt: "Seguros Estado" },
-    { src: "/Google.png", alt: "Google" },
-    { src: "/Rappi.png", alt: "Rappi" },
     { src: "/Bancolombia.png", alt: "Bancolombia" },
-    { src: "/Webflow.png", alt: "Webflow" },
   ]
 
   const benefitCards = [
@@ -647,8 +642,8 @@ export default function Home() {
                 </a>
               </div>
               <h3 className="mt-4 text-[1.18rem] font-bold text-[#fd7914] md:text-[1.35rem]">andrés rubiano</h3>
-              <p className="mt-2 max-w-xs text-[1.03rem] leading-relaxed text-slate-700 md:text-[1.08rem]">
-                Ceo eki, experto en innovación corporativa. ha implementado sistemas en 60+ empresas. &quot;el método detrás de la locura&quot;.
+              <p className="mt-2 max-w-[20rem] text-center text-[1.03rem] leading-8 text-slate-700 md:max-w-[24rem] md:text-[1.08rem]">
+                <strong>CEO eki | Co-Fundador EurekAI | Consultor experto, 15+ años de experiencia en innovación corporativa con impacto y educación ejecutiva.</strong> Ha implementado sistemas de innovación en 60+ empresas de LATAM, desde startups hasta corporativos.
               </p>
             </div>
 
@@ -678,8 +673,8 @@ export default function Home() {
                 </a>
               </div>
               <h3 className="mt-4 text-[1.18rem] font-bold text-[#fd7914] md:text-[1.35rem]">César Trujillo</h3>
-              <p className="mt-2 max-w-xs text-[1.03rem] leading-relaxed text-slate-700 md:text-[1.08rem]">
-                Socio Fundador SupermAInds, 30 años en tecnología y humanidades. Candidato a Doctor en IA y Machine Learning. &quot;La conexión entre la IA y los negocios&quot;.
+              <p className="mt-2 max-w-[20rem] text-center text-[1.03rem] leading-8 text-slate-700 md:max-w-[24rem] md:text-[1.08rem]">
+                <strong>Socio Fundador SupermAInds | Co-Fundador EurekAI | Bogotá Chapter Lead para The AI Collective | Cursando un Doctorado en IA + ML. Walsh College (USA)</strong> 30+ años de experiencia en la intersección entre tecnología, humanidades y negocios.
               </p>
             </div>
           </div>
@@ -698,8 +693,8 @@ export default function Home() {
 
           {/* Carrusel de marcas */}
           <div className="brands-marquee mt-12 overflow-hidden py-7">
-            <div className="brands-track">
-              {[...brandLogos, ...brandLogos].map((logo, index) => (
+            <div className="brands-track justify-center">
+              {brandLogos.map((logo, index) => (
                 <div key={`${logo.alt}-${index}`} className="brands-item flex h-12 min-w-[170px] items-center justify-center">
                   <Image
                     src={logo.src}
@@ -939,94 +934,20 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-[#081523] text-white">
-        <div className="mx-auto max-w-6xl px-6 py-12 lg:py-16">
-          <div className="grid gap-8 lg:grid-cols-[1.3fr_1.7fr] lg:items-end">
-            <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-slate-400">Mantente informado</p>
-              <h3 className="mt-4 max-w-xl text-2xl font-semibold text-white sm:text-3xl">
-                Recibe actualizaciones sobre nuevas cohortes
-              </h3>
-            </div>
-
-            <div>
-              <div className="flex overflow-hidden rounded-full border border-white/20 bg-white/10 shadow-lg shadow-slate-950/20">
-                <input
-                  type="email"
-                  placeholder="Tu correo aquí"
-                  className="w-full bg-transparent px-5 py-3 text-base text-white placeholder:text-white/55 focus:outline-none"
-                />
-                <button
-                  type="button"
-                  className="rounded-r-full bg-[#fd7914] px-8 text-base font-semibold text-white transition hover:bg-[#fd7914]"
-                >
-                  Suscríbete
-                </button>
-              </div>
-              <p className="mt-3 text-sm text-white/60">
-                Al suscribirse aceptas nuestra política de privacidad.
-              </p>
-            </div>
-          </div>
-
-          <div className="mt-10 grid gap-6 text-white/90 md:grid-cols-4 md:gap-4">
-            <div>
-              <h4 className="text-xl font-semibold text-white">Programas</h4>
-              <ul className="mt-5 space-y-3 text-base">
-                <li>Explorar cursos</li>
-                <li>Aplicar ahora</li>
-                <li>Metodología</li>
-                <li>Comunidad</li>
-                <li>Equipo</li>
-              </ul>
-            </div>
-
-            <div className="md:border-l md:border-white/10 md:pl-8">
-              <h4 className="text-xl font-semibold text-white">Contacto</h4>
-              <ul className="mt-5 space-y-3 text-base">
-                <li>Hablemos</li>
-              </ul>
-
-              <h4 className="mt-8 text-xl font-semibold text-white">Recursos</h4>
-              <ul className="mt-5 space-y-3 text-base">
-                <li>Preguntas frecuentes</li>
-              </ul>
-            </div>
-
-            <div className="md:border-l md:border-white/10 md:pl-8">
-              <h4 className="text-xl font-semibold text-white">Empresa</h4>
-              <ul className="mt-5 space-y-3 text-base">
-                <li>Sobre EurekAI</li>
-                <li>Nuestro equipo</li>
-              </ul>
-            </div>
-
-            <div className="md:border-l md:border-white/10 md:pl-8">
-              <h4 className="text-xl font-semibold text-white">Legal</h4>
-              <ul className="mt-5 space-y-3 text-base">
-                <li>Términos de servicio</li>
-                <li>Política de privacidad</li>
-              </ul>
-            </div>
-          </div>
+      <section className="bg-black">
+        <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 py-4 sm:flex-row">
+          <Link href="/" className="flex items-center gap-3">
+            <Image
+              src="/LogoEurekai-WTH.png"
+              alt="EurekAI logo"
+              width={140}
+              height={42}
+              className="h-8 w-auto object-contain"
+            />
+          </Link>
+          <p className="text-sm text-white/65">© 2025 EurekAI. Todos los derechos reservados</p>
         </div>
-
-        <div className="border-t border-white/10 bg-black">
-          <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 py-4 sm:flex-row">
-            <Link href="/" className="flex items-center gap-3">
-              <Image
-                src="/LogoEurekai-WTH.png"
-                alt="EurekAI logo"
-                width={140}
-                height={42}
-                className="h-8 w-auto object-contain"
-              />
-            </Link>
-            <p className="text-sm text-white/65">© 2025 EurekAI. Todos los derechos reservados</p>
-          </div>
-        </div>
-      </footer>
+      </section>
 
       <a
         href={actionLinks.whatsapp}
