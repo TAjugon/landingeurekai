@@ -654,9 +654,9 @@ export default function Home() {
                   <Linkedin className="h-4 w-4 text-slate-700" />
                 </a>
               </div>
-              <h3 className="mt-4 text-[1.18rem] font-bold text-[#fd7914] md:text-[1.35rem]">andrés rubiano</h3>
+              <h3 className="mt-4 text-[1.18rem] font-bold text-[#fd7914] md:text-[1.35rem]">Andrés Rubiano</h3>
               <p className="mt-2 max-w-[20rem] text-center text-[1.03rem] leading-8 text-slate-700 md:max-w-[24rem] md:text-[1.08rem]">
-                <strong>CEO eki | Co-Fundador EurekAI | Consultor experto, 15+ años de experiencia en innovación corporativa con impacto y educación ejecutiva.</strong> Ha implementado sistemas de innovación en 60+ empresas de LATAM, desde startups hasta corporativos.
+                <strong>CEO eki | Consultor experto, 15+ años de experiencia en innovación corporativa con impacto y educación ejecutiva.</strong> Ha implementado sistemas de innovación en 60+ empresas de LATAM, desde startups hasta corporativos.
               </p>
             </div>
 
@@ -687,7 +687,7 @@ export default function Home() {
               </div>
               <h3 className="mt-4 text-[1.18rem] font-bold text-[#fd7914] md:text-[1.35rem]">César Trujillo</h3>
               <p className="mt-2 max-w-[20rem] text-center text-[1.03rem] leading-8 text-slate-700 md:max-w-[24rem] md:text-[1.08rem]">
-                <strong>Socio Fundador SupermAInds | Co-Fundador EurekAI | Bogotá Chapter Lead para The AI Collective | Cursando un Doctorado en IA + ML. Walsh College (USA)</strong> 30+ años de experiencia en la intersección entre tecnología, humanidades y negocios.
+                <strong>Socio Fundador SupermAInds | Bogotá Chapter Lead para The AI Collective | Cursando un Doctorado en IA + ML. Walsh College (USA)</strong> 30+ años de experiencia en la intersección entre tecnología, humanidades y negocios.
               </p>
             </div>
           </div>
