@@ -11,8 +11,9 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'EurekAI Bootcamp',
-  description: 'Bootcamp presencial de innovacion potenciada con inteligencia artificial.',
+  title: "EurekAI",
+  description:
+    "Programas para líderes y equipos en la intersección de innovación, inteligencia artificial e impacto. Bootcamp y cursos aplicables desde el primer día.",
   icons: {
     icon: '/eurekai.png',
     shortcut: '/eurekai.png',
